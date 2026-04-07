@@ -23,3 +23,6 @@ stage ('#4. Run the image - containerise'){
 bat 'docker run -d -p 4000 -- name mycount mywebsite'
 }
 }
+
+}
+}
