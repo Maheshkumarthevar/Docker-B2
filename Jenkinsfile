@@ -6,7 +6,7 @@ stages{
     git url:'https://github.com/Maheshkumarthevar/Docker-B2',branch:'main'
 }
 }
-stage('#2. Build the image'){
+stage('#2. Build the Image'){
   steps{
    bat 'docker build -t mywebsite .'
      }
@@ -18,9 +18,9 @@ bat 'docker stop mucont || exit 0'
   }
 }
 
-stage ('#4. Run the image - containerise'){
+stage ('#4. Run the Image - containerise'){
  steps{
-bat 'docker run -d -p 4000 -- name mycount mywebsite'
+bat 'docker run -d -p 4000:80 -- name mycount mywebsite'
 }
 }
 
