@@ -3,7 +3,7 @@ pipeline{
 stages{
  stage('#1.chechout'){
   steps{
-    git url:'https://github.com/Maheshkumarthevar/Docker-B2/new/main',branch:'main'
+    git url:'https://github.com/Maheshkumarthevar/Docker-B2',branch:'main'
 }
 }
 stage('#2. Build the image'){
